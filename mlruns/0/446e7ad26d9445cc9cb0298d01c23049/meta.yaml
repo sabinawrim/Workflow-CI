@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/446e7ad26d9445cc9cb0298d01c23049/artifacts
+end_time: 1761716790177
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 446e7ad26d9445cc9cb0298d01c23049
+run_name: powerful-shrimp-643
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761716778594
+status: 3
+tags: []
+user_id: runner

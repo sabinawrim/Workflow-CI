@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/de50e954c5b2491ab62e076a609b3d7a/artifacts
+end_time: 1761717759605
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: de50e954c5b2491ab62e076a609b3d7a
+run_name: bemused-eel-295
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761717750075
+status: 3
+tags: []
+user_id: runner

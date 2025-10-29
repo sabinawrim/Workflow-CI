@@ -1,0 +1,14 @@
+# copy dari model (conda.yaml) yang ada di mlflow
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.4
+  - pip<=25.1.1
+  - pip:
+      - mlflow==2.22.0
+      - cloudpickle==3.1.1
+      - numpy==1.26.4
+      - pandas==2.2.3
+      - scikit-learn==1.6.0
+      - scipy==1.14.1
+name: mlflow-env

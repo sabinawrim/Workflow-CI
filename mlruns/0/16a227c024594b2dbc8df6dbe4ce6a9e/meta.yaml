@@ -1,0 +1,14 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/0/16a227c024594b2dbc8df6dbe4ce6a9e/artifacts
+end_time: 1761882247787
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 16a227c024594b2dbc8df6dbe4ce6a9e
+run_name: youthful-donkey-725
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761882241660
+status: 3
+tags: []
+user_id: runner

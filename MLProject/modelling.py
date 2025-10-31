@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 # mlflow.set_tracking_uri("http://127.0.0.1:5000/")
 
-mlflow.set_experiment("Membangun-Model-Klasifikasi-Diabetes")
+# mlflow.set_experiment("Membangun-Model-Klasifikasi-Diabetes")
 
 # path dataset
 train_data = pd.read_csv("pima_diabetes_processed/train_diabetes_processed.csv")

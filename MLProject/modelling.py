@@ -1,12 +1,14 @@
-# import dagshub
+import dagshub
 import mlflow
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
+import random
+import numpy as np
 
-# mlflow.set_tracking_uri("http://127.0.0.1:5000/")
+mlflow.set_tracking_uri("http://127.0.0.1:5000/")
 
-# mlflow.set_experiment("Membangun-Model-Klasifikasi-Diabetes")
+mlflow.set_experiment("Membangun-Model-Klasifikasi-Diabetes")
 
 # path dataset
 train_data = pd.read_csv("pima_diabetes_processed/train_diabetes_processed.csv")
@@ -20,22 +22,10 @@ y_test = test_data["Outcome"]
 
 input_example = X_train[0:5]
 
-with mlflow.start_run(run_name="manual_run"):
-    # Log parameters
-    n_estimators = 505
-    max_depth = 37
-    mlflow.autolog()
-    
-    # Train model
-    model = RandomForestClassifier(n_estimators=n_estimators, max_depth=max_depth)
-    mlflow.sklearn.log_model(
-        sk_model=model,
-        artifact_path="model",
-        input_example=input_example
-    )
-    model.fit(X_train, y_train)
+# aktifkan autolog sebelum proses mlflow.start_run()
+mlflow.sklearn.autolog() 
 
-    # Log metrics
-    accuracy = model.score(X_test, y_test)
-    mlflow.log_metric("accuracy", accuracy)
-    
+with mlflow.start_run(run_name="manual_run"):    
+    # Train model
+    model = RandomForestClassifier()
+    model.fit(X_train, y_train)
